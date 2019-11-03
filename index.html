@@ -1,15 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test Git</title>
+	<title>Video chat</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
-	<ul>
-		<li>Jara</li>
-		<li>Yassa</li>
-		<li>Sara</li>
-		<li>Fatima</li>
-		<li>Omar</li>
-	</ul>
+
+<div class="container-fluid">
+		
+		<div class="row h-100 w-100">
+				<div class="col-12 col-sm-6 d-flex justify-content-center">
+					
+					<div class="embed-responsive embed-responsive-16by9">
+
+						<video class="embed-responsive-item" muted></video>
+						
+					</div>
+
+
+				</div>
+
+				<div class="col-12 col-sm-6 d-flex justify-content-center">
+					
+					<div id="peerDiv" class="embed-responsive embed-responsive-16by9">
+
+						
+					</div>
+				</div>
+
+		</div>
+</div>
+<script src="https://video-chatyassine.herokuapp.com/socket.io/socket.io.js"></script>
+<script src="js/simplepeer.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>
